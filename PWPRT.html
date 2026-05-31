@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en"
+    <head>
+    <meta charset="UTF=8">
+          <link rel="stylesheet" href="indexstyles.css">
+    <title>password protect</title>
+  <h1>
+    ENTER PASSWORD
+  </h1>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="accessPage()">ANSWER</button>
+
+    <script>
+      function accessPage() {
+        var password = document.getElementById("passwordinput").value;
+        window location.href = password + ".html";
+    </script>
+    
+</html>
