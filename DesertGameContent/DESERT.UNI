@@ -2,7 +2,7 @@
 $UniverseStart
 uni++init
 
-@StartRenderLoop
+@StartScript {RenderLoop.script}
 renameWindow"DESERT f{CHAP_C}"
 
 end
