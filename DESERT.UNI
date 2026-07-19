@@ -1,0 +1,8 @@
+###UNI FILE STRUCT by Project Labs###
+$UniverseStart
+uni++init
+
+@StartRenderLoop
+renameWindow"DESERT f{CHAP_C}"
+
+end
