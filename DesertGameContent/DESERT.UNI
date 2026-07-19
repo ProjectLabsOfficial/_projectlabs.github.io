@@ -5,4 +5,10 @@ uni++init
 @StartScript {RenderLoop.script}
 renameWindow"DESERT f{CHAP_C}"
 
+plJobRecive{[ChapSwitch]}
+{
+  cp Data-Cur.sv | /Desert&f{CHAP_C}++/
+  srt_read{DesertGameContent/f{CHAP_C}++$.dta
+}
+
 end
