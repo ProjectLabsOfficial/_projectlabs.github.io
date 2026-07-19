@@ -1,0 +1,27 @@
+SetWindowMaxRatio{800, 800}
+
+func GetModelRatio
+{
+  bootmem ModelRead_Cur
+  SetModelRatio {Modelx, Modely, Modelz}
+}
+
+###Use OS rendering###
+rendchk{plloop}
+###If PLloop does not exist = is not valid PL  employee###
+if {rendchkreturn = f} then
+{
+  return("PLloop does not exist on OS.")
+}
+
+if {rendchkreturn = t} then
+{
+  FLAG_SET[plloop=5]
+}
+
+###Actually render###
+PL_Draw3d_Tri 
+{
+  index_of {CurrentModelTriangle} = sysvar_time
+  PL_DrawTri{"tl TriModelX, TriModelY, TriModelZ"}
+}
